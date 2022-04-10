@@ -4,9 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Weather Dashboard</title>
 </head>
 <body>
-    
+    <header class="d-flex flex-column header">
+        <h1>Weather Dashboard</h1>
+    </header>
+    <main class="container"> 
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <h3 class="fw-bold">Search for a City</h3>
+                <input type="text" id="search-city" value="New York City">
+                <button id="search-btn">Search</button>
+                <hr />
+                <div id="search-history">
+                </div>
+            </div>
+            <div class="col-12 col-md-8">
+                <div class="day-forecast">
+                    <div class="weather">
+                        <h3 id="weather-city" class="fst-italic fw-bold">Search a City</h3>
+                        <p id="weather-current-date" class="weather-current-date"></p>
+                    </div>
+                    <div><img id="weather-icon" /> </div>
+                    <p>Temp: <span id="weather-current-temp"></span> </p>
+                    <p>Wind: <span id="weather-current-wind"></span> </p>
+                    <p>Humidity: <span id="weather-current-humidity"></span> </p>
+                    <p>UV Index: <span id="weather-current-uv" class="px-2 py-1"></span> </p>
+                </div>                
+                <div class="row week-forecast">
+                    <h3>5 Day Forecast</h3>
+                    <div class="col">
+                        <h5 id="day1Date"></h5>
+                        <img id="day1Img">
+                        <p>Temp: <span id="day1Temp"></span></p>
+                        <p>Wind: <span id="day1Wind"></span></p>
+                        <p>Humidity: <span id="day1Hum"></span></p>
+                    </div>
+                    <div class="col">
+                        <h5 id="day2Date"></h5>
+                        <img id="day2Img">
+                        <p>Temp: <span id="day2Temp"></span></p>
+                        <p>Wind: <span id="day2Wind"></span></p>
+                        <p>Humidity: <span id="day2Hum"></span></p>
+                    </div>
+                    <div class="col">
+                        <h5 id="day3Date"></h5>
+                        <img id="day3Img">
+                        <p>Temp: <span id="day3Temp"></span></p>
+                        <p>Wind: <span id="day3Wind"></span></p>
+                        <p>Humidity: <span id="day3Hum"></span></p>
+                    </div>
+                    <div class="col">
+                        <h5 id="day4Date"></h5>
+                        <img id="day4Img">
+                        <p>Temp: <span id="day4Temp"></span></p>
+                        <p>Wind: <span id="day4Wind"></span></p>
+                        <p>Humidity: <span id="day4Hum"></span></p>
+                    </div>
+                    <div class="col">
+                        <h5 id="day5Date"></h5>
+                        <img id="day5Img">
+                        <p>Temp: <span id="day5Temp"></span></p>
+                        <p>Wind: <span id="day5Wind"></span></p>
+                        <p>Humidity: <span id="day5Hum"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+    <script src='https://code.jquery.com/ui/1.13.1/jquery-ui.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.2/moment.min.js" ></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
