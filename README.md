@@ -4,6 +4,13 @@
 
 Utilize third-party APIs to retrieve weather data for cities searched by the user.
 
+## Built With
+
+* HTML
+* CSS/BootStrap
+* JS/JQuery
+* Moment JS
+
 ## User Story
 
 AS A traveler, I WANT to see the weather outlook for multiple cities, SO THAT I can plan a trip accordingly.
