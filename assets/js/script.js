@@ -63,7 +63,7 @@ var displayForecast = function(city, forecastWeather) {
         document.getElementById(`day${i}Wind`).textContent = day.wind_speed + " MPH";
         document.getElementById(`day${i}Hum`).textContent = day.humidity + " %";
         var img = document.getElementById(`day${i}Img`);
-        img.setAttribute("src", `https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`)
+        img.setAttribute("src", `https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`);
         img.setAttribute("alt", day.weather[0].description);
     }
 };
@@ -88,7 +88,7 @@ var displayHistory = function(name, lat, lon) {
     searchHistory.innerHTML = "";
     for (var i = history.length-1; i >= 0; i--) {
         var log = document.createElement("button");
-        log.setAttribute("class", "search-history-btn")
+        log.setAttribute("class", "search-history-btn");
         log.setAttribute("data-lat", history[i].lat);
         log.setAttribute("data-lon", history[i].lon);
         log.innerText = history[i].name;
