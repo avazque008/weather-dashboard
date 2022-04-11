@@ -66,3 +66,26 @@ main {
 .week-forecast div {
     padding: 15px;
 }
+
+.uv {
+    padding: 5px 10px;
+}
+
+.low {
+    background-color: green;
+    color: white;
+}
+
+.moderate{
+    background-color: yellow;
+    color: black;
+}
+
+.high {
+    background-color: orange;
+    color: black;
+}
+.severe {
+    background-color: red;
+    color: white;
+}
