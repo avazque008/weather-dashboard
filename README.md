@@ -24,7 +24,7 @@ AS A traveler, I WANT to see the weather outlook for multiple cities, SO THAT I 
 
 ## Deployed Application Image
 
-
+<img width="1044" alt="Capture1" src="https://user-images.githubusercontent.com/97632228/162660737-ab28cb6c-7357-4ad1-bbab-95f77efe2261.PNG">
 
 ## Application Deployment URL
 
